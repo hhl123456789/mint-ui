@@ -6,6 +6,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/header',
+    name: 'header',
+    component: () => import('../testing/Header.vue'),
+  },
+  {
     path: '/',
     name: 'home',
     component: HomeView
