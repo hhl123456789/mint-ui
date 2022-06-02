@@ -6,6 +6,31 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/navbar',
+    name: 'navbar',
+    component: () => import('../testing/Navbar.vue'),
+  },
+  {
+    path: '/loadingmore',
+    name: 'loadingmore',
+    component: () => import('../testing/Loadingmore.vue'),
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/Login.vue'),
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import('../views/Register.vue'),
+  },
+  {
+    path: '/field',
+    name: 'field',
+    component: () => import('../testing/Field.vue'),
+  },
+  {
     path: '/header',
     name: 'header',
     component: () => import('../testing/Header.vue'),
