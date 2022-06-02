@@ -11,13 +11,20 @@
       </mt-tab-item>
       <mt-tab-item id="3"
         >网页
-        <img src="../assets/007.png" slot="icon" />
+        <img src="/007.png" slot="icon" />
       </mt-tab-item>
       <mt-tab-item id="4"
         >交互
-        <img src="../assets/025.png" slot="icon" />
+        <img src="/025.png" slot="icon" />
       </mt-tab-item>
     </mt-navbar>
+
+    <mt-tab-container v-model="selected">
+      <mt-tab-container-item id="1">UI内容</mt-tab-container-item>
+      <mt-tab-container-item id="2">电商内容</mt-tab-container-item>
+      <mt-tab-container-item id="3">网页内容</mt-tab-container-item>
+      <mt-tab-container-item id="4">交互内容</mt-tab-container-item>
+    </mt-tab-container>
   </div>
 </template>
 <script>
