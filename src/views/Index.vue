@@ -66,6 +66,19 @@ export default {
       articleList:[], //用于存储文章列表  
     };
   },
+  watch: {
+    // 监听顶部导航选中项的ID变化
+    selected(newValue, oldValue) {
+      // 回到页面顶部
+      window.scrollTo(0,0);
+      
+      console.log(newValue);
+      this.axios.get(`/articles?cid=${newValue}&page=1`).then((res)=>{
+        console.log("顶部导航",res);
+        this.articleList=res.data.results;  //为articleList重新赋值为新数组
+      })
+    }
+  },
 };
 </script>
 

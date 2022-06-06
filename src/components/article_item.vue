@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+
     <!-- 单一文章信息开始 -->
     <div class="articleItem">
       <!-- 文章标题开始 -->
@@ -10,7 +10,7 @@
       <div class="articleItem-wrapper">
         <!-- 文章图像开始  -->
         <div class="articleImg">
-          <img :src="`/articles/${article.image}`" />
+          <img v-if="article.image" :src="`/articles/${article.image}`" />
         </div>
         <!-- 文章图像结束 -->
         <!-- 文章简介开始 -->
