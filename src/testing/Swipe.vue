@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mt-swipe style="height:56.2vw">
+    <mt-swipe style="height:56.2vw" :speed="2000" :auto="5000">
       <mt-swipe-item>
         <img src="/1.jpg" />
       </mt-swipe-item>

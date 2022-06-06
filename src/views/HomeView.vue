@@ -3,7 +3,7 @@
     <!-- 二级路由占位符 -->
     <router-view />
     <!-- 底部导航 选项卡-->
-    <mt-tabbar v-model="tabselected">
+    <mt-tabbar v-model="tabselected" fixed>
       <mt-tab-item id="index"
         >首页
         <img
